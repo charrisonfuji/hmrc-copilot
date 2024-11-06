@@ -14,7 +14,7 @@
 <body>
     <div>
         <div id="banner">
-            <img class="logo" src="assets/hmrc-logo.svg"><b>HMRC Chat</b>
+            <img class="logo" src="assets/hmrc-logo.svg"><b>HMRC assistant</b>
         </div>
         <div id="webchat" role="main"></div>
     </div>
@@ -47,10 +47,10 @@
                 suggestedActionBackground: 'White',
                 suggestedActionBorder: undefined, // split into 3, null
                 suggestedActionBorderColor: undefined, // defaults to accent
-                suggestedActionBorderStyle: 'solid',
-                suggestedActionBoarderWidth: 2,
-                suggestedActionBorderRadius: 15,
-                suggestedActionImageHeight: 20,
+                suggestedActionBorderStyle: 'none',
+                suggestedActionBoarderWidth: 0,
+                suggestedActionBorderRadius: 0,
+                suggestedActionImageHeight: 0,
                 suggestedActionTextColor: null,
                 suggestedActionDisabledBackground: undefined, // defaults to suggestedActionBackground
                 suggestedActionDisabledBorder: null,
@@ -79,12 +79,18 @@
                 bubbleTextColor: 'Black',
                 // Add box shadow for bot and user bubbles
                 bubbleBoxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)', // Shadow for bot bubbles
-                bubbleFromUserBoxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)' // Shadow for user bubbles
+                bubbleFromUserBoxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)', // Shadow for user bubbles
+                transcriptOverlayButtonBackground: 'rgba(0, 0, 0, .6)',
+                transcriptOverlayButtonBackgroundOnFocus: 'rgba(0, 0, 0, .8)',
+                transcriptOverlayButtonBackgroundOnHover: 'rgba(0, 0, 0, .8)',
+                transcriptOverlayButtonColor: 'White',
+                transcriptOverlayButtonColorOnFocus: undefined, // defaults to transcriptOverlayButtonColor
+                transcriptOverlayButtonColorOnHover: undefined, // defaults to transcriptOverlayButtonColor   
             };
 
             // Specifies the token endpoint URL.
             // To get this value, visit Copilot Studio > Settings > Channels > Mobile app page.
-            const tokenEndpointURL = new URL('https://0b4391057bf9e1ec914efc590a8f96.00.environment.api.powerplatform.com/powervirtualagents/botsbyschema/fuj_hrmccopilot/directline/token?api-version=2022-03-01-preview');
+            const tokenEndpointURL = new URL('https://4e145cf73fb8e88e96cf19133ed74c.a3.environment.api.powerplatform.com/powervirtualagents/botsbyschema/cr7de_copilot1/directline/token?api-version=2022-03-01-preview');
 
             // Specifies the language the copilot and Web Chat should display in:
             // - (Recommended) To match the page language, set it to document.documentElement.lang
